@@ -2,77 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Insurance Dashboard Design System - Professional & Trustworthy */
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 248 250 252;
-    --foreground: 215 25% 27%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    /* Insurance Professional Blue */
-    --primary: 215 84% 34%;
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 215 84% 28%;
-    --primary-light: 215 84% 94%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    /* Neutral Tones */
-    --secondary: 210 11% 96%;
-    --secondary-foreground: 215 25% 27%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 215 20% 96%;
-    --muted-foreground: 215 15% 58%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 215 84% 94%;
-    --accent-foreground: 215 84% 34%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-    /* Status Colors */
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
-    --success-light: 142 76% 94%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --warning: 35 92% 47%;
-    --warning-foreground: 0 0% 100%;
-    --warning-light: 35 92% 94%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 0 0% 100%;
-    --destructive-light: 0 72% 94%;
-
-    --pending: 213 93% 67%;
-    --pending-foreground: 0 0% 100%;
-    --pending-light: 213 93% 94%;
-
-    --fraud: 316 73% 52%;
-    --fraud-foreground: 0 0% 100%;
-    --fraud-light: 316 73% 94%;
-
-    /* Interface Elements */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 215 84% 34%;
-
-    --radius: 0.75rem;
-
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(215 84% 34%), hsl(215 84% 28%));
-    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 30%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(215 20% 98%));
-
-    /* Shadows */
-    --shadow-card: 0 1px 3px hsl(215 25% 27% / 0.05), 0 1px 2px hsl(215 25% 27% / 0.1);
-    --shadow-hover: 0 4px 12px hsl(215 25% 27% / 0.08), 0 2px 4px hsl(215 25% 27% / 0.05);
-    --shadow-active: 0 1px 2px hsl(215 25% 27% / 0.1);
-
-    /* Animation Timing */
-    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -136,47 +100,6 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-  }
-}
-
-@layer components {
-  /* Interactive Elements */
-  .btn-interactive {
-    @apply transition-all duration-200 hover:shadow-lg active:scale-[0.98];
-  }
-
-  .card-hover {
-    @apply transition-all duration-200 hover:shadow-xl cursor-pointer;
-  }
-
-  .status-badge {
-    @apply px-3 py-1 rounded-full text-xs font-medium inline-flex items-center gap-1.5;
-  }
-
-  /* Status Variants */
-  .status-approved {
-    @apply bg-success-light text-success;
-  }
-
-  .status-pending {
-    @apply bg-pending-light text-pending;
-  }
-
-  .status-rejected {
-    @apply bg-destructive-light text-destructive;
-  }
-
-  .status-review {
-    @apply bg-warning-light text-warning;
-  }
-
-  .status-fraud {
-    @apply bg-fraud-light text-fraud;
-  }
-
-  /* Chart animations */
-  .chart-animate {
-    @apply transition-all duration-500 ease-in-out;
+    @apply bg-background text-foreground;
   }
 }
